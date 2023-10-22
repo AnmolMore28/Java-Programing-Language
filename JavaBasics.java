@@ -1,4 +1,4 @@
-import java.util.Scanner;
+// import java.util.Scanner;
 class JavaBasics {
 
 //public static void rohumbu_full(int n){ for(int i=0;i<=n;i++ ){

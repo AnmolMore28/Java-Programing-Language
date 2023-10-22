@@ -18,5 +18,5 @@ public class matrices {
                 } System.out.println();
               }             
 
-  }  
+ sc.close(); }  
 }

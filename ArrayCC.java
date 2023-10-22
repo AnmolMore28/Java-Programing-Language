@@ -1,4 +1,4 @@
-import java.lang.reflect.Array;
+// import java.lang.reflect.Array;
 import java.util.*;
 
 public class ArrayCC{
@@ -18,7 +18,7 @@ public class ArrayCC{
     int percentages= (marks[0]+marks[1]+marks[2])/3;
     System.out.println(percentages);
     System.out.println(marks.length);
-    
+    sc.close();
     }
     
     
