@@ -1,4 +1,4 @@
-public class backtracking {
+public class Backtracking {
 //  public static boolean sudokusolver(int sudoku[][],int row ,int col ){
 
 //  }

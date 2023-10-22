@@ -66,8 +66,8 @@ int j=0;
    public static void main(String args[]) {
         int arr []={2,1,3,6,7};
         //  inbuilt array
-        // Arrays.sort(arr,0,6);
-        // Arrays.sort(arr,0,6,Collections.reverseOrder() );
+         Arrays.sort(arr,0,6);
+        //Arrays.sort(arr,0,6,Collections.reverseOrder() );
         countingsort(arr);   
         printArr(arr); 
 
