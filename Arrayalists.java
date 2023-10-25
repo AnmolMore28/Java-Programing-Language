@@ -4,14 +4,9 @@ public class Arrayalists {
 int temp = list.get(idx1);
 list.set(idx1, list.get(idx2));
 list.set(idx2, temp);
-
 }
 
-
-
-
-  
-  public static void main(String args[] ){
+public static void main(String args[] ){
 
         
   //  ArrayList<Integer> list= new ArrayList<>();
@@ -119,8 +114,7 @@ list3 = 3,6,9,12,15*/
 // For Swapping
 
 ArrayList<Integer> list= new ArrayList<>();
-list.add(2); //here complexity is O(1)
-  list.add(5);
+  list.add(2); 
   list.add(9);
   list.add(3);
   list.add(6);
@@ -128,5 +122,8 @@ list.add(2); //here complexity is O(1)
  int idx1 =1,idx2=3;
  System.out.println(list);
 swap(list, idx1, idx2);
-System.out.println(list); } 
+System.out.println(list); 
+
 }
+ 
+   }
