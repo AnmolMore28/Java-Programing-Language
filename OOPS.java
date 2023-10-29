@@ -9,26 +9,16 @@ public class OOPS{
     p1.color = "yellow";
    System.out.println(p1.color);
 
- Student s1= new Student();
+ Student s1 = new Student();
+ Student s2 = new Student(s1);
 
+            }
+             }
+            
 
+               
 
-   
-   
-   //     BankAccount myAcc =new BankAccount(); 
-//   myAcc.username="Anmol";
-//   myAcc.setPassword("AnmolkRam");
-}
-    }
-//  class BankAccount{
-//   public String username;
-//          private String password;
-//    public void setPassword (String pwd){
-//     password=pwd;
-//    }
-//         }  
-
-class Student {
+class Student { 
     String name;
     int roll;
     String password;
@@ -42,12 +32,18 @@ System.out.println("Ram bhai Sarayanne!!! ");
 class Pen{
     String color;
     int tip;
+     String getColor(){
+        return this.color;
+     }
+     
 void setColor(String newColor ){
     color =newColor;
 
 } 
-void setTip(int newTip){
-    tip =newTip;
-
+void setTip(int tip){
+    this.tip = tip;
 }
+// void setTip(int newTip){
+    // tip =newTip;gh
+
 }
