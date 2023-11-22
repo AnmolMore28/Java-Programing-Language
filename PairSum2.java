@@ -38,7 +38,7 @@ if (list.get(rp)+ list.get(lp)<Target) {
         list.add(9); 
         list.add(10);        
         int Target =16;
-          System.out.println(By2pointer(Target, list));
+        System.out.println(By2pointer(Target, list));
       }
         
 }
