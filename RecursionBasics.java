@@ -15,7 +15,7 @@ printDec(n-1);
 // public static void PrintInc(int n ){
 // if(n==1){ 
 //     System.out.print(n+" ");
-// return ;ss
+// return ;
 // }
 // PrintInc(n-1);
 // System.out.print(n+" ");
@@ -51,14 +51,45 @@ printDec(n-1);
 // int fn =fnm1+fnm2;ss
 // System.out.println(fn);
 // return 1;
-// public static boolean isSortted(int arr[], int
-// }
 
-// // }
+
+public static boolean isSortted(int arr[], int i){
+    if (i==arr.length-1) {
+        return true;
+    }
+    if (arr[i]> arr[i+1]) {
+        return false;
+    }
+return isSortted(arr, i+1) ;
+}
+public static int Firstocurrence(int arr[], int i,int key){
+    if(arr [i]==arr.length+1){
+return -1;
+    }   
+     if (arr[i]== key) {
+        return i;    }
+    return Firstocurrence(arr, i+1, key);
+}
+public static int Lastocurrence(int arr[], int i,int key){
+
+if( i == arr.length){
+return -1;
+    }
+    int isFound = Lastocurrence(arr, i+1, key);
+    if (isFound == -1 && arr[i]== key) {
+        return i;
+    }
+return isFound;
+}
 public static void main (String []args  ) {
-    int n=10;
+    // int n=10;
     // PrintInc(n);
-   printDec(n); 
+//    printDec(n);
+int key =2; 
+int arr[]= {1,2,3,43,4,3,1,2,23,3,3,2};
+// System.out.println(isSortted(arr, 0)); 
+// System.out.println(Firstocurrence(arr, 0, key));
+System.out.println(Lastocurrence(arr, 0, key));
 }
 
 
