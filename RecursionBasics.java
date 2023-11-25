@@ -81,15 +81,31 @@ return -1;
     }
 return isFound;
 }
+public static int tillingproblem(int n){
+// base
+if (n ==0 || n==1) {
+    return 1;
+}
+// kaam
+// for verticall 
+int fnm1= tillingproblem(n-1 );
+//  for horizontal
+int fnm2 = tillingproblem(n -2);
+
+int totways = fnm1+ fnm2;
+return totways;
+}
 public static void main (String []args  ) {
     // int n=10;
     // PrintInc(n);
 //    printDec(n);
 int key =2; 
+
 int arr[]= {1,2,3,43,4,3,1,2,23,3,3,2};
 // System.out.println(isSortted(arr, 0)); 
 // System.out.println(Firstocurrence(arr, 0, key));
 System.out.println(Lastocurrence(arr, 0, key));
+System.out.println(tillingproblem(3));
 }
 
 

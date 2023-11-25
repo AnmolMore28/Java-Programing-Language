@@ -1,17 +1,21 @@
 public class Backtracking {
-//  public static boolean sudokusolver(int sudoku[][],int row ,int col ){
-
-//  }
+// Find sub set
+public static void findSubsets(String str,int i, String ans){
+  // base case
+  if (i == str.length()) {
+    // recursion
+  if (ans.length() == 0) {
+    System.out.println("null");
+  } else { 
+    System.out.println(ans);
+  }return;}
+  // yes choices
+  findSubsets(str, i+1, ans+str.charAt(i));
+// no choices
+findSubsets(str, i+1, ans);
+}
  public static void main(String[] args) {
-   //  int sudoku[][]={ 
-   //  {3, 0, 6, 5, 0, 8, 4, 0, 0},
-   //  {5, 2, 0, 0, 0, 0, 0, 0, 0},
-   //  {0, 8, 7, 0, 0, 0, 0, 3, 1},
-   //  {0, 0, 3, 0, 1, 0, 0, 8, 0},
-   //  {9, 0, 0, 8, 6, 3, 0, 0, 5},
-   //  {0, 5, 0, 0, 9, 0, 6, 0, 0}, 
-   //  {1, 3, 0, 0, 0, 0, 2, 5, 0},
-   //  {0, 0, 0, 0, 0, 0, 0, 7, 4},
-   //  {0, 0, 5, 2, 0, 6, 3, 0, 0} };
- }
+ String str = "abc";
+findSubsets(str, 0, "");
+}
 }
