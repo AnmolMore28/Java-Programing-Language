@@ -9,8 +9,8 @@ public class OOPS{
     p1.color = "yellow";
    System.out.println(p1.color);
 
- Student s1 = new Student();
- Student s2 = new Student(s1);
+//  Student s1 = new Student();
+//  Student s2 = new Student(s1);
 
             }
              }
