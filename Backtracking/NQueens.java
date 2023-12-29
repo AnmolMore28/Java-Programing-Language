@@ -23,17 +23,18 @@ return false;
  
 
     public static void nQueens(char Board[][] ,int row ){
-if (row == Board.length) {
-    printQueen(Board);
-return;
-}
+    if (row == Board.length) {
+    // printQueen(Board);
+    count++;
+    return;
+    }
  for (int j = 0; j < Board.length; j++) {
     if(Safezone(Board, row, j)){
         Board[row][j] ='Q';
         nQueens(Board,row+1);//function call
         Board[row][j] ='X'; // Backtracking   
 }     
-}}
+}} static int count =0;
 public static void printQueen(char Board[][] ){
 System.out.println("-----Chess board-----");    
 for (int i = 0; i < Board.length; i++) {
@@ -54,5 +55,6 @@ Board[i][j] = 'X';
         }
 }
 nQueens(Board,0);
+System.out.println(" the no ways are = "+count);
 }
 }
